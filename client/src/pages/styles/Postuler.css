@@ -1,0 +1,40 @@
+.postulerW {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+}
+.postulerW .adCard{
+    flex: 3;
+    margin-right: 5em;
+}
+.postulerW div:last-child {
+    flex: 5;
+}
+
+.retour {
+    margin: 1.5em 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .postulerW {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .postulerW .adCard {
+        margin: 2em 0 0 0;
+    }
+}
+@media (min-width:768px) and (max-width: 1024px) {
+    .postulerW {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .postulerW .adCard {
+        margin: 2em 0 0 0;
+    }
+}

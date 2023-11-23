@@ -1,0 +1,24 @@
+.formBox {
+    border: 0.0625em solid black;
+    border-radius: 1em;
+    padding: 1em;
+    width: calc(100% - 2 * 1em);
+    margin: 0 auto;
+}
+.formBox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formBox article {
+    /* border: 0.0625em solid black; */
+    border-radius: 1em;
+    padding: 1em;
+    width: calc(100% - 2 * 1em);
+    text-align: center;
+    text-decoration: underline;
+}
+.formBox .infoPerso {}
+.formBox .infoPostuler {
+    margin-top: 1.5em;
+}

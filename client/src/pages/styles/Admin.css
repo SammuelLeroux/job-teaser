@@ -1,0 +1,90 @@
+/* Admin */
+.addItem {
+    margin: 0 0 0 2em;
+}
+
+.itemsBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin: 3em 0;
+}
+.itemsBox .adCard,
+.itemsBox .itemCard
+{
+    margin: 2em 0 0 1em;
+}
+.itemsBox .itemCard {
+    border: 0.0625em solid grey;
+    border-radius: 0.5em;
+    padding: 2em;
+}
+.itemsBox .adCard:nth-child(3n+1),
+.itemsBox .itemCard:nth-child(3n+1)
+{
+    margin-left: 0;
+}
+
+.noItems {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .paginationType {
+        font-size: 0.875em;
+        text-align: center;
+    }
+
+    .addItem {
+        margin: 2em 0 0 0 ;
+    }
+    
+    .itemsBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .itemsBox .adCard,
+    .itemsBox .itemCard
+    {
+        width: calc(100% - 2 * 1em) !important;
+        margin-left: 0;
+    }
+}
+@media (min-width:768px) and (max-width: 1024px) {
+    .paginationType {
+        font-size: 0.875em;
+        text-align: center;
+    }
+
+    .addItem {
+        margin: 0 0 0 2em;
+    }
+    
+    .itemsBox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .itemsBox .adCard,
+    .itemsBox .itemCard
+    {
+        width: calc(100% / 2 - 2 * 1em) !important;
+        margin-left: 0;
+    }
+    .itemsBox .adCard:nth-child(2n),
+    .itemsBox .itemCard:nth-child(2n)
+    {
+        margin: 2em 0 0 1em;
+    }
+}
+/* Home */

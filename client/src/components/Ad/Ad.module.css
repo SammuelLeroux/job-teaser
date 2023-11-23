@@ -1,0 +1,38 @@
+.adCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+section {
+    border: 0.0625em solid grey;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+section:last-child {
+    border: 0.0625em solid royalblue;
+    display: none;
+}
+section:last-child h2 {
+    text-decoration: underline;
+}
+
+.desc {
+    color: grey;
+    text-align: justify;
+}
+
+.travail {
+    margin: 0.5em 0 0 -0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 1.25em;
+}
+.travail span {
+    margin-left: 2em;
+}
+.travail span:first-child {
+    margin-left: 0.5em;
+}

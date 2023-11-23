@@ -1,0 +1,6 @@
+.groupForm:first-child {
+    flex: 3;
+}
+.groupForm:last-child {
+    flex: 7;
+}
